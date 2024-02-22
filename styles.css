@@ -1,0 +1,727 @@
+* {
+  font-family: Arial;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  background: url("netflix_bg.jpg");
+  background-size: cover;
+  height: 750px;
+}
+
+.navbar {
+  height: 70px;
+  margin: 0 8.75rem;
+  padding: 43px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  background: url("netflix_logo.png");
+  height: 5rem;
+  width: 9.25rem;
+  background-size: cover;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-lang {
+  padding: 6px 24px;
+  background-color: rgba(48, 48, 48, 0.224);
+  border: 0.5px solid gray;
+  border-radius: 4px;
+  margin-right: 25px;
+}
+
+.nav-lang i {
+  color: white;
+}
+
+.select-lang {
+  border: none;
+  color: white;
+  font-size: 1rem;
+  background: none;
+  padding: 0px 3px 0px 0px;
+  outline: none;
+  background: transparent;
+}
+
+.select-lang option {
+  color: black;
+}
+
+.sign-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #e50914;
+  width: 76px;
+  height: 32px;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.sign-btn:hover {
+  background-color: #bb060f;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  margin: 0 140px;
+  padding: 70px 55px 43px 55px;
+  color: white;
+  text-align: center;
+}
+
+.email-reg-new-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+} 
+
+.email-reg-line-100 {
+  font-size: 1.25rem;
+  margin-top: 30px;
+}
+
+
+.title-intro-1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.title-intro-2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.email-reg-line-1 {
+  font-size: 1.25rem;
+  margin-top: 30px;
+}
+
+.email-reg-boxes {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-reg-boxes input {
+  width: 360px;
+  height: 56px;
+  padding: 24px 16px 8px;
+  background-color: rgba(28, 28, 28, 0.862);
+  outline: none;
+  border: 0.1rem solid rgba(128, 128, 128, 0.557);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.email-effect {
+  font-size: 1rem;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  color: rgb(204, 204, 204);
+  pointer-events: none;
+}
+
+.input-box input:focus {
+  border: 1px solid white;
+}
+
+.input-box input:focus:invalid {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.input-box input:valid {
+  border: 1px solid rgb(118, 255, 130);
+}
+
+.input-box input:focus ~ span {
+  transform: translateX(-5px) translateY(-10px);
+  transition: 0.2s;
+  font-size: 0.8rem;
+}
+
+.input-box input:valid ~ span {
+  transform: translateX(-5px) translateY(-10px);
+  transition: 0.2s;
+  font-size: 0.8rem;
+}
+
+.get-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 202px;
+  height: 56px;
+  background-color: #e50914;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+.get-btn:hover {
+  background-color: #bb060f;
+}
+
+.get-btn p {
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+
+.conatiner {
+  margin: 0 8.75rem;
+  padding: 30px 55px 0px 55px;
+}
+
+.sec-1, .sec-2, .sec-3, .sec-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.sec-5{
+  margin-bottom: 30px;
+}
+
+.sec-1-text, .sec-2-text, .sec-3-text, .sec-4-text  {
+  color: white;
+  margin-bottom: 100px;
+}
+
+.sec-2-text{
+  padding-left: 5rem;
+}
+
+.sec-1-text-1, .sec-2-text-1, .sec-3-text-1, .sec-4-text-1, .sec-5-text-1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.sec-1-text-2, .sec-2-text-2, .sec-3-text-2, .sec-4-text-2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.sec-1-video-container {
+  background: url("tv.png");
+  background-size: contain;
+  width: 37.5rem;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sec-2-video-container {
+  background: url("2-section.png");
+  background-size: contain;
+  width: 37.5rem;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sec-2-video-container video{
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  z-index: -1;
+}
+
+.sec-1-photo-container {
+  background: url("3-section.png");
+  background-size: contain;
+  width: 40rem;
+  height: 40rem;
+  background-repeat: no-repeat;
+}
+
+.sec-4-photo-container {
+  background: url("4section.jpg");
+  background-size: contain;
+  width:41rem;
+  height: 41rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-4-download{
+  width: 370px;
+  height: 104px;
+  border: 2.5px solid rgb(84, 84, 84);
+  background-color: black;
+  margin-top: 160px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.sec-4-donwload-animation-box{
+  position: absolute;
+  right: 20px;
+  top: 26px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.sec-4-download-animation-inner{
+  border: 3px solid rgb(0, 149, 255);
+  height: 20px;
+  width: 20px;
+   border-style: dashed;
+   border-radius: 40px;
+   animation: ball 3s ease-in-out infinite;
+}
+
+@keyframes ball{
+  0% {
+      transform: rotate(0deg);
+  }
+
+  25%{
+      border-style: dashed;
+      height: 25px;
+      width: 25px;
+  }
+
+  50%{
+    border-style: inset;
+  }
+
+  100% {
+      transform: rotate(360deg);
+      border-style: dashed;
+  }
+}
+
+
+.sec-4-download-image{
+  height: 80px;
+  width: 100px;
+  background-image: url("4-section-download.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+
+.sec-4-download-text{
+  padding: 30px 20px 20px 100px;
+}
+
+.sec-4-download-text-1{
+  color: white;
+  font-weight: 500;
+}
+.sec-4-download-text-2{
+  color: rgb(0, 102, 255);
+  font-size: 0.9rem;
+}
+
+.sec-1-video-container video {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  width: 27.1875rem;
+  height: 15.5rem;
+  z-index: -1;
+}
+
+.line-break{
+  height: 8px;
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  display: block;
+  /* margin-bottom: 200px; */
+}
+
+.sec-5-text-1{
+  color: white;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.list-item{
+  position: relative;
+}
+
+.list-item-part-1, .list-item-part-2{
+  width: 100%;
+  margin-top: 10px;
+  padding: 35px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: rgb(48, 48, 48);
+}
+
+.list-item-part-1 p{
+  height: 20px;
+}
+
+.list-item-part-1:hover{
+  background-color: rgb(64, 64, 64);
+}
+
+.list-item-part-2{
+  margin-top: 1px;
+  cursor: default;
+}
+
+.hidden{
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  transition: height 0.3s visibility 0.3s;
+}
+
+.fa-plus{
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 2rem;
+}
+
+.fa-xmark{
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: 2rem;
+}
+
+.email-reg-line-1 {
+  font-size: 1.25rem;
+  margin-top: 30px;
+}
+
+.email-reg-boxes {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-reg-boxes input {
+  width: 360px;
+  height: 56px;
+  padding: 24px 16px 8px;
+  background-color: rgba(28, 28, 28, 0.862);
+  outline: none;
+  border: 0.1rem solid rgba(128, 128, 128, 0.557);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.email-effect {
+  font-size: 1rem;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  color: rgb(204, 204, 204);
+  pointer-events: none;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.footer-list-item-container{
+  margin-bottom: 12px;
+}
+
+.footer-list-items{
+  color: rgb(181, 181, 181);
+}
+
+
+
+/* Mobile & Tablet Common VIEW */
+
+@media only screen and (max-width: 1230px) {
+  .header {
+    height: 500px;
+  }
+  .navbar {
+    margin: 0 0rem;
+    padding: 43px 20px;
+  }
+
+  .logo {
+    height: 3rem;
+    width: 5.25rem;
+  }
+
+  .select-lang {
+    display: none;
+  }
+
+  .title {
+    margin: 0px 5px;
+    padding: 20px 20px;
+    height: 400px;
+  }
+
+  .title-intro-1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .title-intro-2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .email-reg {
+    width: 80%;
+  }
+
+  .email-reg-line-1 {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .email-reg-boxes {
+    flex-direction: column;
+  }
+
+  .email-effect {
+    font-size: 0.9rem;
+  }
+
+  .email-reg-boxes input {
+    width: 294px;
+    height: 48px;
+    font-size: 0.9rem;
+  }
+
+  .input-box input:focus ~ span {
+    font-size: 0.7rem;
+  }
+
+  .input-box input:valid ~ span {
+    font-size: 0.7rem;
+  }
+
+  .get-btn {
+    margin-top: 15px;
+    width: 156px;
+    height: 48px;
+  }
+
+  .get-btn p {
+    font-size: 1rem;
+  }
+
+  .conatiner {
+    margin: 0 0.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .sec-1, .sec-3{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sec-2, .sec-4{
+    flex-direction: column-reverse;
+    text-align: center;
+    }
+
+  .sec-1-text, .sec-2-text, .sec-3-text,.sec-4-text{
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  .sec-1-text-1, .sec-2-text-1, .sec-3-text-1,.sec-4-text-1{
+    font-size: 2.5rem;
+  }
+
+  .sec-5-text-1{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .list-item-part-1{
+    font-size: 1.3rem;
+  }
+
+  .list-item-part-2{
+    font-size: 1.3rem;
+  }
+
+  .fa-plus,.fa-xmark{
+    font-size: 1.3rem;
+    right: 20px;
+    top: 35px;
+  }
+
+}
+
+/* Mobile Unqiue VIEW */
+
+@media only screen and (max-width: 600px) {
+  .sec-1-text-1, .sec-2-text-1, .sec-3-text-1,.sec-4-text-1{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .sec-1-text-2, .sec-2-text-2, .sec-3-text-2,.sec-4-text-2{
+    font-size: 1.1rem;
+  }
+
+  .sec-1-video-container, .sec-2-video-container {
+    background-size: contain;
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .sec-1-video-container video {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 17.1875rem;
+    height: 15.5rem;
+    z-index: -1;
+  }
+
+  .sec-2-video-container video{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    z-index: -1;
+    width: 200px;
+  }
+
+  .sec-1-photo-container {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .sec-4-photo-container{
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .sec-4-download{
+    width: 16rem;
+    height: 4.5rem;
+  }
+
+  .sec-4-download-image{
+    height: 60px;
+    width: 40px;
+    top: 5px;
+    left: 10px;
+  }
+
+  .sec-4-donwload-animation-box{
+    top: 10px;
+    right: 10px;
+  }
+
+  .sec-4-download-text{
+    padding: 10px 10px;
+  }
+  .sec-4-download-text-1{
+    font-size: 0.9rem;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+}
+
+/* Tablet Unqiue VIEW */
+
+@media only screen and (min-width: 600px) and (max-width: 1230px) {
+  
+  .title {
+    margin: 0px 5px;
+    padding: 20px 20px;
+    height: 400px;
+  }
+
+  .title-intro-1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .email-reg-boxes {
+    flex-direction: row;
+  }
+  .get-btn {
+    margin-top: 0px;
+  }
+
+  .footer-container{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+
+}
